@@ -1,0 +1,25 @@
+{
+  "name": "eb-technical-test",
+  "version": "1.0.0",
+  "description": "Patient summary app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compose-dev": "docker-compose -f docker-compose.dev.yml up --build --renew-anon-volumes",
+    "recompose-dev": "docker-compose -f docker-compose.dev.yml up --build -d",
+    "show-docker-compose-logs": "docker-compose -f docker-compose.dev.yml logs -f -t"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdebeer/eb-technical-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdebeer/eb-technical-test/issues"
+  },
+  "homepage": "https://github.com/jdebeer/eb-technical-test#readme",
+  "dependencies": {
+    "eslint-config-airbnb": "^19.0.4"
+  }
+}
